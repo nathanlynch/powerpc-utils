@@ -54,8 +54,7 @@ static int query_slot(struct dr_node *node)
 		return RC_IN_USE;
 	}
 
-	/* Special case for HMC */
-	return RC_LINUX_SLOT;
+	return RC_OK_TO_REMOVE;
 }
 
 /**

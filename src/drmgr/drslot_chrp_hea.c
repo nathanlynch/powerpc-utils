@@ -375,8 +375,7 @@ int drslot_chrp_hea(void)
 				    usr_drc_name);
 				rc = RC_DONT_OWN;
 			} else {
-				/* Special case for HMC */
-				rc = RC_LINUX_SLOT;
+				rc = RC_OK_TO_REMOVE;
 			}
 
 			free_node(node);

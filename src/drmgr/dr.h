@@ -35,11 +35,11 @@ extern int log_fd;
 extern int is_lsslot_cmd;
 
 /* Error Exit Codes */
+#define RC_OK_TO_REMOVE		0
 #define RC_IN_USE		1
 #define RC_NONEXISTENT 		3
 #define RC_DONT_OWN		4
 #define RC_ALREADY_OWN		5
-#define RC_LINUX_SLOT		6 /* Special case for ConcMaint */
 
 /* Online/Offline */
 #define OFFLINE		0

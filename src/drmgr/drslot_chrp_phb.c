@@ -91,7 +91,7 @@ static int query_phb(void)
 	else if (phb_has_dlpar_children(phb))
 		rc = RC_IN_USE;
 	else
-		rc = RC_LINUX_SLOT;
+		rc = RC_OK_TO_REMOVE;
 
 	if (phb)
 		free_node(phb);
